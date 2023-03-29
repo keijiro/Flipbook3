@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "com.unity.render-pipelines.high-definition": "15.0.4",
+    "jp.keijiro.klak.motion": "1.0.2",
+    "jp.keijiro.klak.testtools": "1.0.4",
+    "jp.keijiro.metamesh": "1.1.1",
+    "jp.keijiro.ml-stable-diffusion": "1.0.0"
+  },
+  "scopedRegistries": [
+    {
+      "name": "Keijiro",
+      "url": "https://registry.npmjs.com",
+      "scopes": [
+        "jp.keijiro"
+      ]
+    }
+  ]
+}
