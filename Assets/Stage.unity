@@ -176,61 +176,6 @@ MonoBehaviour:
   frequency: 0.03
   octaves: 2
   seed: 56
---- !u!1 &293000784
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 293000786}
-  - component: {fileID: 293000785}
-  m_Layer: 0
-  m_Name: Image Source
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &293000785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 293000784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40ff2e515a81541cbb664860588e2c6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _sourceType: 2
-  _texture: {fileID: 2800000, guid: bf484d5ad7486444d8646f7bc425be3e, type: 3}
-  _textureUrl: 
-  _video: {fileID: 0}
-  _videoUrl: 
-  _webcamName: FaceTime HD Camera
-  _webcamResolution: {x: 1920, y: 1080}
-  _webcamFrameRate: 30
-  _outputTexture: {fileID: 0}
-  _outputResolution: {x: 1920, y: 1080}
-  _shader: {fileID: 4800000, guid: 3f7d8db4748f54c638a46cec0b0e61f8, type: 3}
---- !u!4 &293000786
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 293000784}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &380289243
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,6 +185,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 380289245}
+  - component: {fileID: 380289247}
   - component: {fileID: 380289246}
   m_Layer: 0
   m_Name: Flipbook
@@ -261,7 +207,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &380289246
 MonoBehaviour:
@@ -275,20 +221,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d68ba9361963424a9779353729daf19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _prompt: painting by salvador dali, surrealism, best quality, masterpiece, best
-    lighting
-  _strength: 0.6
+  _prompt: 'poirtrait with detailed background by alphonse mucha '
+  _strength: 0.65
   _stepCount: 6
   _seed: 100
   _guidance: 10
-  _source: {fileID: 293000785}
+  _source: {fileID: 380289247}
   _speed: 0.6
   _mesh: {fileID: -8670151273213183110, guid: 1abf3ae3cadaf44e5b3b59c1b8b44233, type: 3}
   _material: {fileID: 2100000, guid: 40d539a3be874446391b991c8d4efbdf, type: 2}
   _preprocess: {fileID: 7200000, guid: 7c06db8e339994c05bc2ad5e44c940de, type: 3}
   _resourceDir: StableDiffusion
-  _computeUnits: 2
+  _computeUnits: 1
   _dryRun: 0
+--- !u!114 &380289247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380289243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40ff2e515a81541cbb664860588e2c6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sourceType: 2
+  _texture: {fileID: 0}
+  _textureUrl: 
+  _video: {fileID: 0}
+  _videoUrl: 
+  _webcamName: FaceTime HD Camera
+  _webcamResolution: {x: 1920, y: 1080}
+  _webcamFrameRate: 30
+  _outputTexture: {fileID: 0}
+  _outputResolution: {x: 1920, y: 1080}
+  _shader: {fileID: 4800000, guid: 3f7d8db4748f54c638a46cec0b0e61f8, type: 3}
 --- !u!1 &487095127
 GameObject:
   m_ObjectHideFlags: 0
@@ -351,7 +319,7 @@ Transform:
   m_Children:
   - {fileID: 1016271874}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 20, y: 90, z: 0}
 --- !u!1 &1016271873
 GameObject:
@@ -398,7 +366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Intensity: 37.883217
+  m_Intensity: 7
   m_EnableSpotReflector: 1
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 0
@@ -417,7 +385,7 @@ MonoBehaviour:
   m_ShapeRadius: 0.025
   m_SoftnessScale: 1
   m_UseCustomSpotLightShadowCone: 0
-  m_CustomSpotLightShadowCone: 4
+  m_CustomSpotLightShadowCone: 2
   m_MaxSmoothness: 0.99
   m_ApplyRangeAttenuation: 1
   m_DisplayAreaLightEmissiveMesh: 0
@@ -520,10 +488,10 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.5045471, g: 0, b: 1, a: 1}
-  m_Intensity: 99.976166
+  m_Intensity: 73.33233
   m_Range: 10
-  m_SpotAngle: 40
-  m_InnerSpotAngle: 4
+  m_SpotAngle: 20
+  m_InnerSpotAngle: 2
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -600,7 +568,7 @@ Transform:
   m_Children:
   - {fileID: 2120212782}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 40, y: -70, z: 0}
 --- !u!1 &1363204176
 GameObject:
@@ -613,7 +581,7 @@ GameObject:
   - component: {fileID: 1363204177}
   - component: {fileID: 1363204178}
   m_Layer: 0
-  m_Name: Post
+  m_Name: Postprocess
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -999,8 +967,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1985048237}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.01, z: 0.1}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalPosition: {x: 0, y: -0.01, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -1036,7 +1004,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Intensity: 90
+  m_Intensity: 20
   m_EnableSpotReflector: 1
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 0
@@ -1055,7 +1023,7 @@ MonoBehaviour:
   m_ShapeRadius: 0.025
   m_SoftnessScale: 1
   m_UseCustomSpotLightShadowCone: 0
-  m_CustomSpotLightShadowCone: 30
+  m_CustomSpotLightShadowCone: 16
   m_MaxSmoothness: 0.99
   m_ApplyRangeAttenuation: 1
   m_DisplayAreaLightEmissiveMesh: 0
@@ -1158,10 +1126,10 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 152.88293
+  m_Intensity: 327.07724
   m_Range: 10
-  m_SpotAngle: 50
-  m_InnerSpotAngle: 21.80208
+  m_SpotAngle: 16
+  m_InnerSpotAngle: 16
   m_CookieSize: 10
   m_Shadows:
     m_Type: 1
@@ -1201,7 +1169,7 @@ Light:
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 0.5, y: 0.5}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
+  m_ColorTemperature: 5000
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0

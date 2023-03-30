@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Material_Page Variant
+  m_Name: Page
   m_Shader: {fileID: -6465566751694194690, guid: b748975cda892469e940c3027bb0bf77, type: 3}
   m_Parent: {fileID: -876546973899608171, guid: b748975cda892469e940c3027bb0bf77, type: 3}
   m_ModifiedSerializedProperties: 16
@@ -34,7 +34,8 @@ Material:
     - Curvature: 1.5
     - Speed: 1
     - _ZTestDepthEqualForOpaque: 3
-    m_Colors: []
+    m_Colors:
+    - _Color: {r: 1, g: 0.9970294, b: 0.9481132, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &1046992678745404864
 MonoBehaviour:

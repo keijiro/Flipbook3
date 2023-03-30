@@ -210,7 +210,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
-  m_Name: Post
+  m_Name: Postprocess
   m_EditorClassIdentifier: 
   components:
   - {fileID: 4458858559401489418}
@@ -220,7 +220,6 @@ MonoBehaviour:
   - {fileID: 7536000503571270335}
   - {fileID: 7644413547512863488}
   - {fileID: 1574858834886043713}
-  - {fileID: 3882217721152749014}
   - {fileID: 5016760684213979797}
 --- !u!114 &1574858834886043713
 MonoBehaviour:
@@ -293,28 +292,6 @@ MonoBehaviour:
   m_SampleCount:
     m_OverrideState: 1
     m_Value: 8
---- !u!114 &3882217721152749014
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da5ab44aadfb1804db5fd470983ac1b8, type: 3}
-  m_Name: LiftGammaGain
-  m_EditorClassIdentifier: 
-  active: 1
-  lift:
-    m_OverrideState: 1
-    m_Value: {x: 1, y: 0.9882312, z: 0.9934418, w: 0}
-  gamma:
-    m_OverrideState: 0
-    m_Value: {x: 1, y: 1, z: 1, w: 0}
-  gain:
-    m_OverrideState: 0
-    m_Value: {x: 1, y: 1, z: 1, w: 0}
 --- !u!114 &4458858559401489418
 MonoBehaviour:
   m_ObjectHideFlags: 3
