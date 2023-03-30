@@ -233,7 +233,7 @@ MonoBehaviour:
   _material: {fileID: 2100000, guid: 40d539a3be874446391b991c8d4efbdf, type: 2}
   _preprocess: {fileID: 7200000, guid: 7c06db8e339994c05bc2ad5e44c940de, type: 3}
   _resourceDir: StableDiffusion
-  _computeUnits: 1
+  _computeUnits: 3
   _uiPreview: {fileID: 1731995347}
   _dryRun: 0
 --- !u!114 &380289247
