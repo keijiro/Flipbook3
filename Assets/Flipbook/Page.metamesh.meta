@@ -17,7 +17,7 @@ ScriptedImporter:
       x: 16
       y: 16
     Axis: 1
-    DoubleSided: 1
+    DoubleSided: 0
   _box:
     Width: 1
     Height: 1

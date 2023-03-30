@@ -18,7 +18,7 @@ public sealed class Controller : MonoBehaviour
     [SerializeField] float _guidance = 6;
     [Space]
     [SerializeField] ImageSource _source = null;
-    [SerializeField, Range(0.1f, 8.0f)] float _speed = 1;
+    [SerializeField, Range(0.1f, 2.0f)] float _speed = 1;
     [Space]
     [SerializeField] Mesh _mesh = null;
     [SerializeField] Material _material = null;
