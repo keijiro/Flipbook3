@@ -27,6 +27,7 @@ public sealed class Controller : MonoBehaviour
     [SerializeField] string _resourceDir = "StableDiffusion";
     [SerializeField] ComputeUnits _computeUnits = ComputeUnits.All;
     [Space]
+    [SerializeField] UnityEngine.UI.RawImage _uiPreview = null;
     [SerializeField] bool _dryRun = false;
 
     #endregion
@@ -103,6 +104,9 @@ public sealed class Controller : MonoBehaviour
             _pipeline = null;
         }
     }
+
+    void Update()
+      => _uiPreview.texture = _source.Texture;
 
     void OnDestroy()
     {
