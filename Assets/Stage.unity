@@ -144,15 +144,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 229486134}
-  m_LocalRotation: {x: 0.46174863, y: 0, z: 0, w: 0.8870109}
-  m_LocalPosition: {x: 0, y: 0, z: -0.1}
+  m_LocalRotation: {x: 0.54463905, y: 0, z: 0, w: 0.8386706}
+  m_LocalPosition: {x: 0, y: 0, z: -0.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1384526577}
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 55, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 66, y: 0, z: 0}
 --- !u!114 &229486136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,11 +222,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d68ba9361963424a9779353729daf19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _prompt: 'poirtrait with detailed background by alphonse mucha '
-  _strength: 0.65
+  _prompt: poirtrait with detailed background and flower by alphonse mucha
+  _strength: 0.7
   _stepCount: 6
-  _seed: 100
-  _guidance: 10
+  _seed: 1000
+  _guidance: 13
   _source: {fileID: 380289247}
   _speed: 0.3
   _mesh: {fileID: -8670151273213183110, guid: 1abf3ae3cadaf44e5b3b59c1b8b44233, type: 3}
@@ -861,7 +861,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1384526576}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.1}
+  m_LocalPosition: {x: 0, y: 0, z: -1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
