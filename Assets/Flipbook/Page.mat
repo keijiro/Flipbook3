@@ -10,7 +10,7 @@ Material:
   m_Name: Page
   m_Shader: {fileID: -6465566751694194690, guid: b748975cda892469e940c3027bb0bf77, type: 3}
   m_Parent: {fileID: -876546973899608171, guid: b748975cda892469e940c3027bb0bf77, type: 3}
-  m_ModifiedSerializedProperties: 8
+  m_ModifiedSerializedProperties: 24
   m_ValidKeywords:
   - _DISABLE_SSR_TRANSPARENT
   - _DOUBLESIDED_ON

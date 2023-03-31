@@ -222,9 +222,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d68ba9361963424a9779353729daf19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _prompt: poirtrait with detailed background and flower by alphonse mucha
-  _strength: 0.67
-  _stepCount: 6
+  _prompt: surrealistic portrait by J. C. Leyendecker
+  _strength: 0.6
+  _stepCount: 5
   _seed: 1000
   _guidance: 10
   _source: {fileID: 380289247}
@@ -233,7 +233,7 @@ MonoBehaviour:
   _material: {fileID: 2100000, guid: 40d539a3be874446391b991c8d4efbdf, type: 2}
   _preprocess: {fileID: 7200000, guid: 7c06db8e339994c05bc2ad5e44c940de, type: 3}
   _resourceDir: StableDiffusion
-  _computeUnits: 3
+  _computeUnits: 2
   _uiPreview: {fileID: 1731995347}
   _dryRun: 0
 --- !u!114 &380289247
