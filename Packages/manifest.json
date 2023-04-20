@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.unity.render-pipelines.high-definition": "15.0.4",
+    "com.unity.render-pipelines.high-definition": "15.0.5",
     "jp.keijiro.klak.motion": "1.0.2",
     "jp.keijiro.klak.testtools": "1.0.4",
     "jp.keijiro.metamesh": "1.1.1",
